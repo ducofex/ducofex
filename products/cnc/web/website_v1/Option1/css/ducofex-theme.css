@@ -1,0 +1,99 @@
+:root{
+  --ducofex-bg:#05070d;
+  --ducofex-bg-soft:#0b1120;
+  --ducofex-surface:#10192b;
+  --ducofex-surface-2:#15213b;
+  --ducofex-line:rgba(126,166,255,.18);
+  --ducofex-primary:#4f7cff;
+  --ducofex-primary-strong:#76a2ff;
+  --ducofex-text:#f4f7ff;
+  --ducofex-text-soft:#adb8d6;
+  --ducofex-glow:0 0 30px rgba(79,124,255,.25);
+  --ducofex-radius:20px;
+}
+
+body{
+  background:
+    radial-gradient(circle at top right, rgba(79,124,255,.20), transparent 35%),
+    radial-gradient(circle at left center, rgba(44,85,255,.14), transparent 28%),
+    linear-gradient(180deg, #04060b 0%, #08101d 55%, #05070d 100%);
+  color:var(--ducofex-text);
+}
+
+.ducofex-shell{
+  background:transparent;
+}
+
+.ducofex-section{
+  padding:96px 0;
+  position:relative;
+}
+
+.ducofex-card{
+  background:linear-gradient(180deg, rgba(19,29,51,.92), rgba(11,17,32,.96));
+  border:1px solid var(--ducofex-line);
+  border-radius:var(--ducofex-radius);
+  box-shadow:var(--ducofex-glow);
+}
+
+.ducofex-btn,
+.ducofex-btn-secondary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:52px;
+  padding:0 24px;
+  border-radius:999px;
+  font-weight:700;
+  letter-spacing:.02em;
+  text-transform:uppercase;
+}
+
+.ducofex-btn{
+  background:linear-gradient(135deg, var(--ducofex-primary), var(--ducofex-primary-strong));
+  color:#fff;
+  box-shadow:0 18px 40px rgba(79,124,255,.28);
+}
+
+.ducofex-btn-secondary{
+  border:1px solid rgba(118,162,255,.45);
+  color:var(--ducofex-text);
+  background:rgba(10,17,31,.65);
+}
+
+.ducofex-hero{
+  padding:120px 0 92px;
+  position:relative;
+  overflow:hidden;
+}
+
+.ducofex-hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 75% 20%, rgba(91,138,255,.32), transparent 24%),
+    radial-gradient(circle at 15% 30%, rgba(51,94,255,.18), transparent 26%);
+  pointer-events:none;
+}
+
+.ducofex-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 16px;
+  border:1px solid var(--ducofex-line);
+  border-radius:999px;
+  background:rgba(10,17,31,.72);
+  color:var(--ducofex-text-soft);
+}
+
+.ducofex-nav-badge{
+  margin-left:8px;
+  padding:4px 8px;
+  border-radius:999px;
+  background:rgba(79,124,255,.16);
+  color:var(--ducofex-primary-strong);
+  font-size:11px;
+  text-transform:uppercase;
+}

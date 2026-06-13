@@ -6437,6 +6437,29 @@ section .kd-tab-2{margin-bottom:30px;float:left;width:100%;}
 .book-cover-detail.call-to-action-right .kode-thumb{
 	float:right;
 }
+
+/*
+=============================================
+			DUCOFEX LEGACY OVERRIDES
+=============================================
+*/
+.header-3 .logo-container,
+.footer-2,
+.lib-count-up-section,
+.kode-navigation ul li:before,
+.kode-navigation ul li:after{
+	background:none;
+	border-color:transparent;
+}
+
+.kode-navigation ul li a{
+	color:var(--ducofex-text);
+}
+
+.kode-navigation ul li a:hover,
+.kode-navigation ul li.active > a{
+	color:var(--ducofex-primary-strong);
+}
 .book-cover-detail.call-to-action-right .kode-text{
 	padding:100px 450px 0px 0;
 	text-align:right;

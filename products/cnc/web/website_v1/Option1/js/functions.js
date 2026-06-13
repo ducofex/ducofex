@@ -71,6 +71,12 @@ jQuery(document).ready(function($){
 	/* ---------------------------------------------------------------------- */
 	/*	Back to Top Script
 	/* ---------------------------------------------------------------------- */
+	if(!$('body').attr('id')){
+		$('body').attr('id', 'top');
+	}
+
+	$('.back-to-top a').attr('href', '#top');
+
 	$('.back-to-top a').on('click',function(){
 		$('html, body').animate({scrollTop : 0},800);
 		return false;
@@ -331,7 +337,11 @@ jQuery(document).ready(function($){
 	if(typeof($.fn.dlmenu) == 'function'){
 		$('#kode-responsive-navigation').each(function(){
 			$(this).find('.dl-submenu').each(function(){
-				if( $(this).siblings('a').attr('href') && $(this).siblings('a').attr('href') != '#' ){
+				if(
+					$(this).siblings('a').attr('href') &&
+					$(this).siblings('a').attr('href') != '#' &&
+					!$(this).children('.kode-parent-menu').length
+				){
 					var parent_nav = $('<li class="menu-item kode-parent-menu"></li>');
 					parent_nav.append($(this).siblings('a').clone());
 					

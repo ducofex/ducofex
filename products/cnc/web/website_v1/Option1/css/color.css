@@ -13,7 +13,7 @@
 .color, .lib-book-detail  .product-price h4, .lib-event-listing .kode-text a.more, .coming-soon .countdown-amount, 
 .coming-soon .countdown-period, .coming-soon h2, .coming-soon .search-field input[type="text"], .coming-soon .social-icon ul li a, .kode-uptodate .input-container button, .lib-testimonial-content:hover p.title, .widget-text ul li i, 
 .kode-navigation li.kode-mega-menu .kode-megamenu-container .mega-wrapper ul li:hover a, .kode-blog-list2 .event-listing-meta ul li i, .kode-event-detail table tr td a, .kode-event-detail-thumb .kode-caption .countdown-amount, .books-listing-4:hover h3 a, .kd-list3 li a:hover, .kd-list3 li:hover:before, .kode-facts .nav-tabs > li > a, .kode-author-detail-2 .kode-text h5, .kode-blog-full .kode-text a.read-more:hover, .kode-blog-list a.more:hover:before, .kode-blog-list a.more:hover, .widget-contact-info a:hover{
-	color: #FF9606;
+	color: #4F7CFF;
 }
 /*
 ============================================
@@ -27,7 +27,7 @@
 .header-1 .kode-navigation ul ul li a:hover, .header-3 .kode-navigation ul ul li a:hover, .post-next-previous a:hover, .best-seller-pro:before, .bx-wrapper .bx-pager.bx-default-pager a.active, #filterable-item-filter-1 li a.active, #filterable-item-filter-1 li a:hover, .lib-categories-section .bx-wrapper .bx-controls-direction a:hover, .kode-best-pro-seller .kode-thumb, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus, .kode-megamenu-container .mega-wrapper h3, .kode-event-detail a.book-now, .kode-blog-list2 .blog-date, .kode-blog-list2 .buy-ticket, .kode-event-detail-thumb .kode-caption a.reg, .kode-event-detail-thumb .social-icon ul li a:hover, .books-listing-3 .kode-caption a:hover, .books-listing-4 a.add-to-cart, .books-listing-4 .kode-thumb a:before, 
 .kode-facts .nav-tabs > li:hover > a,
 .kode-facts .nav-tabs > li.active > a, .kode-facts .nav-tabs > li.active > a:hover, .kode-facts .nav-tabs > li.active > a:focus, .slider-selection, .widget-price-filter a.filter, .kode-navigation ul ul li a:hover, .contact-box .social-icon ul li a:hover, .book-released .cart-btns a, .recent-release .owl-controls .owl-page.active, .kd-tab-2 .nav-tabs > li > a:hover, .lib-blog-post .kode-text a.more:hover, .error-404 a.go-back:hover{
-	background-color: #FF9606;
+	background-color: #4F7CFF;
 }
 /*
 ============================================
@@ -38,15 +38,15 @@
 .kode-service:hover, .kode-testimonials-4 .kode-thumb, .kode-blog-list h2:before, .kode-package .package-content a.purchase:hover, .kode-profile-tabs .kd-horizontal-tab .nav-tabs > li.active > a, .banner-search, blockquote, .kode-banner .kode-caption-2 .caption-btns a:hover, .kode-service-3:hover i, .lib-testimonial-content:hover .kode-thumb, .kode-service-2:hover, .kd-accordion .panel-group .panel-heading a, .kode-comments ul li .kode-text a.reply:hover, .lib-ebook a.more:hover, .lib-blog-2 .kode-text a.more:hover, .error-404 a.go-back, .coming-soon .countdown-show4 .countdown-section, 
 .coming-soon .search-field input[type="text"], .coming-soon .social-icon ul li a, 
 .header-3 .kode-navigation ul ul, .section-content h2:before, #filterable-item-filter-1 li a.active, #filterable-item-filter-1 li a:hover, .kode-service-3:hover, .kode-event-detail-thumb .kode-caption, .books-listing-3 .kode-caption a:hover, .kode-facts .nav-tabs > li > a, .lib-book-detail a.add-to-cart:hover, .kode-navigation ul ul, .contact-box, .kd-tab-2 .nav-tabs > li > a:hover, .lib-blog-post .kode-text a.more:hover, .error-404 a.go-back:hover{
-	border-color: #FF9606;
+	border-color: #4F7CFF;
 }
 
 .header-3 .kode-navigation ul li:after{
-	border-bottom-color: #FF9606;
+	border-bottom-color: #4F7CFF;
 }
 
 .kode_price_sec h2,.kode_list_section:hover .kode_try_wrap a{
-	color:#FF9606;	
+	color:#4F7CFF;	
 }
 
 /*
@@ -55,7 +55,7 @@
 	  =============================
 */
 .kode_list_section:hover .kode_price_sec,.kode_list_section:hover .kode_try_wrap{
-	background-color:#FF9606;	
+	background-color:#4F7CFF;	
 }
 
 
