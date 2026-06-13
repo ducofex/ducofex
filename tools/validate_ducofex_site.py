@@ -38,7 +38,7 @@ def main() -> int:
         for nav_item in REQUIRED_NAV:
             if nav_item not in html:
                 errors.append(f"{page}: missing nav item {nav_item}")
-        if "images/brand/6x3.png" not in html:
+        if "images/brand/ducofex-transparent.png" not in html:
             errors.append(f"{page}: missing brand logo path")
         for banned in BANNED_WORDS:
             if banned in html:
