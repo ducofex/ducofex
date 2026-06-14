@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
 :root{
+  --ducofex-font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --ducofex-font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
   --ducofex-bg:#05070c;
   --ducofex-bg-soft:#0a0f18;
   --ducofex-surface:#0d131d;
@@ -692,6 +696,11 @@ a{
     font-size:clamp(40px, 10vw, 58px);
   }
 
+  .ducofex-hero h1{
+    max-width:none;
+    font-size:clamp(40px, 10vw, 58px);
+  }
+
   .ducofex-hero p,
   .section-heading-1 p{
     font-size:17px;
@@ -705,4 +714,143 @@ a{
   .ducofex-section[style*="padding-top:0"]{
     padding-top:40px !important;
   }
+}
+
+/* ==========================================================================
+   PREMIUM MODERNIZATION & TYPOGRAPHY OVERRIDES
+   ========================================================================== */
+
+/* Universal typography overrides to clear old templates */
+body, p, li, ul, ol, span, a, input, select, textarea, button, td, th {
+  font-family: var(--ducofex-font-body) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.section-heading-1 h2,
+.ducofex-card h1, .ducofex-card h2, .ducofex-card h3, .ducofex-card h4,
+.kode-navigation ul li a,
+.dl-menuwrapper button, .dl-menuwrapper li a {
+  font-family: var(--ducofex-font-heading) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Global line height and text layout optimization */
+p, li {
+  line-height: 1.8 !important;
+  text-wrap: pretty !important;
+}
+
+h1, h2, h3, h4 {
+  text-wrap: balance !important;
+}
+
+/* Hero heading line wrap & letter spacing fixes */
+.ducofex-hero h1 {
+  max-width: 850px !important;
+  font-size: clamp(38px, 5.2vw, 64px) !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.03em !important;
+  margin-inline: 0 !important;
+}
+
+/* Card aesthetics and hover micro-animations */
+.ducofex-card {
+  padding: 32px !important;
+  background: linear-gradient(180deg, rgba(14, 20, 31, 0.65), rgba(9, 13, 20, 0.85)) !important;
+  border: 1px solid rgba(141, 164, 204, 0.15) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(2, 6, 14, 0.2) !important;
+  backdrop-filter: blur(12px) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.ducofex-card:hover {
+  border-color: rgba(106, 142, 255, 0.35) !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 16px 40px rgba(79, 124, 255, 0.12), 0 0 24px rgba(106, 142, 255, 0.04) !important;
+}
+
+/* Specific smaller hero cards */
+.ducofex-hero .ducofex-card {
+  padding: 24px !important;
+}
+
+/* Flexbox layout equal-height wrapping for rows */
+.kode-content .row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.kode-content .row > [class*="col-"] {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.kode-content .row > [class*="col-"] > .ducofex-card {
+  flex: 1 1 auto !important;
+  height: 100% !important;
+}
+
+/* Buttons modernization */
+.ducofex-btn,
+.ducofex-btn-secondary {
+  border-radius: 12px !important;
+  font-family: var(--ducofex-font-heading) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  letter-spacing: 0.01em !important;
+  min-height: 52px !important;
+  padding: 0 28px !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.ducofex-btn {
+  background: linear-gradient(135deg, #4f7cff, #6a8eff) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(79, 124, 255, 0.25) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.ducofex-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(79, 124, 255, 0.35), 0 0 12px rgba(106, 142, 255, 0.15) !important;
+  filter: brightness(1.08);
+}
+
+.ducofex-btn-secondary {
+  border: 1px solid rgba(141, 164, 204, 0.22) !important;
+  color: var(--ducofex-text) !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+
+.ducofex-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(141, 164, 204, 0.35) !important;
+  transform: translateY(-2px) !important;
+  color: #ffffff !important;
+}
+
+/* Navigation layout cleanups */
+.header-3 .kode-navigation ul li a {
+  font-family: var(--ducofex-font-heading) !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.02em !important;
+  padding: 10px 16px !important;
+  border-radius: 10px !important;
+  transition: all 0.25s ease !important;
+}
+
+.header-3 .kode-navigation ul li a:hover,
+.header-3 .kode-navigation ul li.active > a {
+  background: rgba(255, 255, 255, 0.05) !important;
+  box-shadow: inset 0 0 0 1px rgba(141, 164, 204, 0.15) !important;
+}
+
+/* Focus indicator updates for accessibility */
+.ducofex-btn:focus-visible,
+.ducofex-btn-secondary:focus-visible {
+  outline: 2px solid var(--ducofex-primary) !important;
+  outline-offset: 3px !important;
 }
