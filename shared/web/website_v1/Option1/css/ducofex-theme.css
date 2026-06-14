@@ -721,6 +721,11 @@ a{
    ========================================================================== */
 
 /* Universal typography overrides to clear old templates */
+html {
+  scrollbar-color: rgba(141, 164, 204, 0.25) rgba(5, 7, 12, 0.95);
+  scrollbar-width: thin;
+}
+
 body, p, li, ul, ol, span, a, input, select, textarea, button, td, th {
   font-family: var(--ducofex-font-body) !important;
 }
