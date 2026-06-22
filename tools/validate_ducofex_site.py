@@ -1,7 +1,7 @@
 from pathlib import Path
 import sys
 
-ROOT = Path("products/cnc/web/website_v1/Option1")
+ROOT = Path("shared/web/website_v1/Option1")
 PAGES = [
     "index.html",
     "machines.html",
